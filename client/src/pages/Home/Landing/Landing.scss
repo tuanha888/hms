@@ -1,0 +1,56 @@
+@import "../../../index.scss";
+#home-page {
+    background-image: linear-gradient(to bottom, rgba(#000, 0.7), rgba(#000, 0.7)),url('../../../assets/images/Physician-Assistants-1-1.jpg');
+    height: 100vh;
+    position: relative;
+    // .overlay {
+    //     position: absolute;
+    //     top: 0;
+    //     bottom: 0;
+    //     right: 0;
+    //     left: 0;
+    //     background-color: rgba($color: #000000, $alpha: 0.7)
+    // }
+    padding-top: 4.3rem;
+    .landing {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10rem;
+        flex-direction: column;
+        &-content {
+            margin-top: 3rem;
+            color: white;
+            font-size: 2rem;
+            max-width: 70rem;
+            text-align: center;
+            letter-spacing: 1.4px;
+        }
+        a {
+            background-color: $primary-color;
+            padding: 1.4rem 2rem 1.4rem 2rem;
+            color: #fff;
+            margin-top: 4rem;
+            border-radius: .6rem;
+            cursor: pointer;
+            font-family: $primary-font;
+            font-size: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: $smooth;
+            &:hover {
+                background-color: #fff;
+                color: $primary-color;
+            }
+
+        }
+    }
+    .landing-heading {
+        color: #fff;
+        font-size: 4rem;
+        max-width: 50rem;
+        z-index: 5;
+        text-align: center;
+    }
+
+}

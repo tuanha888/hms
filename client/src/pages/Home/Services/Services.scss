@@ -1,0 +1,38 @@
+@import "../../../index.scss";
+.services {
+    max-width: 120rem;
+    margin-right: auto;
+    margin-left: auto;
+    &-heading {
+        margin-top: 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 3.6rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: $primary-color;
+    }
+    &-item {
+        display: flex;
+        align-items: center;
+        margin: 2rem 0;
+        justify-content: center;
+        
+    }
+    &-item:last-child {
+        flex-direction: row-reverse;
+    }
+    &-img {
+        width: 50%;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+    &-content {
+        max-width: 50rem;
+        margin: 0 2rem;
+        font-size: 1.8rem;
+        text-align: justify;
+        letter-spacing: 1.4px;
+
+    }
+}

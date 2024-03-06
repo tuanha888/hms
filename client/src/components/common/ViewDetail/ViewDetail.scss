@@ -1,0 +1,7 @@
+@import "../../../index.scss";
+.view-detail {
+    cursor: pointer;
+    &:hover {
+        color: $primary-color;
+    }
+}

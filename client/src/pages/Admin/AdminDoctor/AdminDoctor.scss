@@ -1,0 +1,31 @@
+@import "../../../index.scss";
+.doctors {
+    margin-left: 20rem;
+    padding: 2rem;
+    position: relative;
+    &-input {
+        width: 40rem !important;
+        margin-right: 2rem;
+        border-radius: 2rem;
+        border-color: #bbb;
+    }
+    &-input-container {
+        display: flex;
+    }
+    &-create {
+        position: absolute;
+        top: 2.5rem;
+        right: 4rem;
+        color: $primary-color;
+        font-size: 4rem;
+        cursor: pointer;
+    }
+}
+.doctor {
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1.5rem;
+    }
+    
+}

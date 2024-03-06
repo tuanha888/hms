@@ -1,0 +1,10 @@
+.patient-button {
+    &-container {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        margin: 0 -1rem !important;
+    }
+    width: calc(50% - 2rem) !important;
+    margin: 0 1rem !important;
+    margin-top: 1rem !important;
+}

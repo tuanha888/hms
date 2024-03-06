@@ -1,0 +1,35 @@
+@import "../../../index.scss";
+.overview {
+    width: calc(25% - 3rem);
+        margin: 0 1.5rem;
+        font-size: 1.4rem;
+        border-radius: 1rem;
+        box-shadow: 3px 3px 3px 3px #ccc;
+        margin-top: 1rem;
+        cursor: pointer;
+        transition: $smooth;
+        &:hover {
+            transform: translate(-5px, -5px);
+        }
+        &-img-container {
+            background-color: #f4f9ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #ccc;
+        }
+        &-img {
+            width: 15rem;
+            height: 15rem;
+            border-radius: 50%;
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
+        }
+        &-item {
+            margin: 1rem 1.5rem !important;
+        }
+}

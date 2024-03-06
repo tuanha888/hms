@@ -1,0 +1,51 @@
+@import "../../../index.scss";
+.modify {
+    &-image-container {
+        position: relative;
+    }
+    .image-picker {
+        position: absolute;
+        bottom: -10px;
+        right: 30%;
+        z-index: 99px !important;
+        color: #000 !important;
+        font-size: 3rem;
+        cursor: pointer;
+        &.is-actived {
+            color: $primary-color !important;
+        }
+    }
+    .modal-modify-choosen {
+        position: relative;
+        .choosen-container {
+            display: none;
+            background-color: #fff;
+            border-radius: 1rem;
+            overflow-y: auto;
+            max-height: 15rem;
+            border: 1px solid #ccc;
+            .choosen {
+                display: flex;
+                flex-direction: column;
+                &-item {
+                    padding: 1rem;
+                    border-bottom: 1px solid #ccc;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #ccc;
+                    }
+                    min-width: 25rem;
+                }
+            }
+            
+        }
+        
+    }
+    .modal-data:focus-within .choosen-container{
+        display: block;
+        position: absolute;
+        top: 6rem;
+        left: 2rem;
+        z-index: 99999;
+    }
+}

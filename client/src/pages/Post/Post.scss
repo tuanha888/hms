@@ -1,0 +1,25 @@
+.post {
+    &-container {
+        max-width: 80rem !important;
+        background-color: #f0f2f5;
+        padding-bottom: 4rem !important;
+    }
+    &-img {
+        max-width: 60rem;
+        margin: 0 auto;
+        border-radius: 2rem;
+        overflow: hidden;
+    }
+    &-title {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    &-summary {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+}

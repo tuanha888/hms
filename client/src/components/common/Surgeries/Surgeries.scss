@@ -1,0 +1,37 @@
+@import "../../../index.scss";
+.surgeries {
+    margin-left: 20rem;
+    position: relative;
+    &-top-list {
+        margin-top: 1rem;
+        padding-left: 2rem;
+        display: flex;
+    }
+    &-top-item {
+        padding: 1rem;
+        cursor: pointer;
+        transition: $smooth;
+        border-bottom: 3px solid transparent;
+        &:hover {
+            border-bottom-color: $primary-color;
+            color: $primary-color;
+        }
+        &.actived {
+            border-bottom-color: $primary-color;
+            color: $primary-color;
+        }
+    }
+    .create-button {
+        position: absolute;
+        top: 0rem;
+        right: 4rem;
+        color: $primary-color;
+        font-size: 4rem;
+        cursor: pointer;
+    }
+}
+.surgery-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+}

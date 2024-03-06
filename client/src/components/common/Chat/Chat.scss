@@ -1,0 +1,14 @@
+@import "../../../index.scss";
+
+.chat {
+    display: grid;
+    grid-template-columns: 3.5fr 1px 6.5fr;
+    width: 100%;
+    gap: 10px;
+    height: 640px;
+}
+
+.seperator-column {
+    background-color: gray;
+    height: 100%;
+}

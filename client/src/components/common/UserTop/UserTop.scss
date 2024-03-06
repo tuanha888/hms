@@ -1,0 +1,62 @@
+@import "../../../index.scss";
+.usertop {
+    height: 6rem;
+    display: flex;
+    
+    flex-direction: row-reverse;
+    position: relative;
+    &-shadow {
+        box-shadow: 2px 2px 2px 0 #ccc;
+    }
+    &-content {
+        margin-left: auto;
+        margin-right: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        &-name {
+            margin-right: 1rem;
+
+        }
+    }
+    &-content-img {
+        border-radius: 50%;
+        overflow: hidden;
+        cursor: pointer;
+        img {
+            width: 4rem;
+            height: 4rem;
+        }
+        
+        &:hover .usertop-choosen {
+            display: block;
+        }
+    }
+    &-icon {
+        position: absolute;
+        bottom: 5px;
+        right: 0;
+        cursor: pointer;
+    }
+    &-choosen {
+        display: none;
+        position: absolute;
+        top: 4.5rem;
+        right: .2rem;
+        background-color: #fff;
+        border-radius: .8rem;
+        border: 1px solid #ccc;
+        min-width: 20rem;
+        z-index: 999;
+    }
+    &-item {
+        padding: 1rem 1.2rem;
+        cursor: pointer;
+        transition: $smooth;
+        border-bottom: 1px solid #ccc;
+        &:hover {
+            background-color: #ddd;
+        }
+    }
+}

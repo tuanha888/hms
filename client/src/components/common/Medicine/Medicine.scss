@@ -1,0 +1,13 @@
+.medicine {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2rem;
+    &-quantity {
+        margin-top: .5rem;
+        margin-bottom: 0.5rem;
+    }
+    &-item {
+        margin-right: 1rem;
+    }
+}

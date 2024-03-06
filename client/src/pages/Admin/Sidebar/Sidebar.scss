@@ -1,0 +1,50 @@
+@import "../../../index.scss";
+.sidebar {
+    width: 20rem;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $primary-color;
+    box-shadow: 4px 4px 4px 0 #ccc;
+    z-index: 9;
+    &-top {
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid #fff;
+    }
+    &-list {
+        
+
+    }
+    &-item {
+        color: #fff;
+        
+        
+        transition: $smooth;
+        &:hover {
+            background-color: #fff;
+            color: $primary-color;
+            .sidebar-item-link {
+                color:$primary-color ;
+            }
+        }
+        
+        &-link {
+            display: block;
+            padding: 1rem 1rem;
+            cursor: pointer;
+            border-bottom: 2px solid #fff;
+            color: #fff;
+            &.actived {
+                background-color: #fff;
+                color: $primary-color;
+                .sidebar-item-link {
+                    color:$primary-color ;
+                }
+            }
+        }
+    }
+}
